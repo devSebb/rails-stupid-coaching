@@ -1,0 +1,13 @@
+<h1>Stupid Coach Answers!</h1>
+
+<p>
+  <% if @question.blank? %>
+    <p>"empty question"</p>
+  <% else %>
+    <%= @question %>
+  <% end %>
+</p>
+
+<p><%= @answer %></p>
+
+<%= link_to "ask a new question", ask_path %>
